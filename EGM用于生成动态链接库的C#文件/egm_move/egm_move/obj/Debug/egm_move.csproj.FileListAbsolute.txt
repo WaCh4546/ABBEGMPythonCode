@@ -1,0 +1,53 @@
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\bin\Debug\egm_move.exe.config
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\obj\Debug\egm_move.Form1.resources
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\obj\Debug\egm_move.Properties.Resources.resources
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\obj\Debug\egm_move.csproj.GenerateResource.Cache
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\bin\Debug\egm_move.exe
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\bin\Debug\egm_move.pdb
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.dll
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.xml
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\obj\Debug\egm_move.exe
+d:\documents\visual studio 2013\Projects\egm_move\egm_move\obj\Debug\egm_move.pdb
+G:\百度云download\egm_平板move\egm_move\egm_move\bin\Debug\ABB_EGM.dll.config
+G:\百度云download\egm_平板move\egm_move\egm_move\bin\Debug\ABB_EGM.dll
+G:\百度云download\egm_平板move\egm_move\egm_move\bin\Debug\ABB_EGM.pdb
+G:\百度云download\egm_平板move\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.dll
+G:\百度云download\egm_平板move\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+G:\百度云download\egm_平板move\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.xml
+G:\百度云download\egm_平板move\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+G:\百度云download\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.AssemblyReference.cache
+G:\百度云download\egm_平板move\egm_move\egm_move\obj\Debug\abb.egm.Properties.Resources.resources
+G:\百度云download\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.GenerateResource.cache
+G:\百度云download\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.CoreCompileInputs.cache
+G:\百度云download\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.CopyComplete
+G:\百度云download\egm_平板move\egm_move\egm_move\obj\Debug\ABB_EGM.dll
+G:\百度云download\egm_平板move\egm_move\egm_move\obj\Debug\ABB_EGM.pdb
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\bin\Debug\ABB_EGM.dll.config
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\bin\Debug\ABB_EGM.dll
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\bin\Debug\ABB_EGM.pdb
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.dll
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.xml
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.AssemblyReference.cache
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\obj\Debug\abb.egm.Properties.Resources.resources
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.GenerateResource.cache
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.CoreCompileInputs.cache
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.CopyComplete
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\obj\Debug\ABB_EGM.dll
+D:\Personal\Desktop\egm_平板move\egm_move\egm_move\obj\Debug\ABB_EGM.pdb
+D:\Personal\Desktop\ABBRobotEGMMovement\ABB_EGM.dll.config
+D:\Personal\Desktop\ABBRobotEGMMovement\ABB_EGM.dll
+D:\Personal\Desktop\ABBRobotEGMMovement\ABB_EGM.pdb
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\ABBRobotEGMMovement\ABB_EGM.dll.config
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\ABBRobotEGMMovement\ABB_EGM.dll
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\ABBRobotEGMMovement\ABB_EGM.pdb
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.AssemblyReference.cache
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\abb.egm.Properties.Resources.resources
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.GenerateResource.cache
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.CoreCompileInputs.cache
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.CopyComplete
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\ABB_EGM.dll
+D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\ABB_EGM.pdb
