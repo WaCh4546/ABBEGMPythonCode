@@ -51,3 +51,13 @@ D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\e
 D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\egm_move.csproj.CopyComplete
 D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\ABB_EGM.dll
 D:\Personal\Desktop\ABB机器人\ABB机器人EGMpython\egm_平板move\egm_move\egm_move\obj\Debug\ABB_EGM.pdb
+E:\Git Project\ABBEGMPython-code\ABBRobotEGMMovement\ABB_EGM.dll.config
+E:\Git Project\ABBEGMPython-code\ABBRobotEGMMovement\ABB_EGM.dll
+E:\Git Project\ABBEGMPython-code\ABBRobotEGMMovement\ABB_EGM.pdb
+E:\Git Project\ABBEGMPython-code\EGM用于生成动态链接库的C#文件\egm_move\egm_move\obj\Debug\egm_move.csproj.AssemblyReference.cache
+E:\Git Project\ABBEGMPython-code\EGM用于生成动态链接库的C#文件\egm_move\egm_move\obj\Debug\abb.egm.Properties.Resources.resources
+E:\Git Project\ABBEGMPython-code\EGM用于生成动态链接库的C#文件\egm_move\egm_move\obj\Debug\egm_move.csproj.GenerateResource.cache
+E:\Git Project\ABBEGMPython-code\EGM用于生成动态链接库的C#文件\egm_move\egm_move\obj\Debug\egm_move.csproj.CoreCompileInputs.cache
+E:\Git Project\ABBEGMPython-code\EGM用于生成动态链接库的C#文件\egm_move\egm_move\obj\Debug\egm_move.csproj.CopyComplete
+E:\Git Project\ABBEGMPython-code\EGM用于生成动态链接库的C#文件\egm_move\egm_move\obj\Debug\ABB_EGM.dll
+E:\Git Project\ABBEGMPython-code\EGM用于生成动态链接库的C#文件\egm_move\egm_move\obj\Debug\ABB_EGM.pdb

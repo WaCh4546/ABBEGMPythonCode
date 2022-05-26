@@ -1,10 +1,12 @@
 import clr
 clr.FindAssembly("ABB_EGM.dll")
 clr.AddReference("ABB_EGM")
+
 from abb.egm import *
-import time
-class EGM():
-    def __init__(self,PortNum):
+
+
+class EGM(object):
+    def __init__(self, IP, PortNum):
         '''
         初始化时输入端口号即可，小飞机6510；加油杆6511
         启动后等待机器人连接
@@ -12,73 +14,59 @@ class EGM():
         SendMessage发送计划位置给机器人
         '''
         #实例化ABB机器人动态链接库里的类
-        self.ABB_EGM=ABBEGM(PortNum)
+        self.ABB_EGM = ABBEGM(IP, PortNum)
         self.robot=None
-        self.sensor=None
-        #获取ABB机器人连接状态
-    def ReceiveMessage(self):
-        self.robot=self.ABB_EGM.ReceiveMessage()#接受ABB机器人发送的信息，并反序列化。
-        status=self.robot.RapidExecState.State
-        if status==EgmRapidCtrlExecState.Types.RapidCtrlExecStateType.RAPID_RUNNING:
-            X = self.robot.FeedBack.Cartesian.Pos.X;
-            Y = self.robot.FeedBack.Cartesian.Pos.Y;
-            Z = self.robot.FeedBack.Cartesian.Pos.Z;
-            ROLL = self.robot.FeedBack.Cartesian.Euler.X;
-            PITCH = self.robot.FeedBack.Cartesian.Euler.Y
-            YAW = self.robot.FeedBack.Cartesian.Euler.Z
-            pos=[X,Y,Z,ROLL,PITCH,YAW]
-            return True,pos
-        else:
-            return False,None
+    def __del__(self):
+        self.ABB_EGM._udpServer.Close()
+    def get_robot_pos_euler(self):
+        self.robot = self.ABB_EGM.ReceiveMessage()#接受ABB机器人发送的信息，并反序列化。
+        x = self.robot.FeedBack.Cartesian.Pos.X
+        y = self.robot.FeedBack.Cartesian.Pos.Y
+        z = self.robot.FeedBack.Cartesian.Pos.Z
+        roll = self.robot.FeedBack.Cartesian.Euler.X
+        pitch = self.robot.FeedBack.Cartesian.Euler.Y
+        yaw = self.robot.FeedBack.Cartesian.Euler.Z
+        pos = [x, y, z, yaw, pitch, roll]
+        return pos
 
-
-        #写入待移动的位置信息，并发送消息给机器人
-    def SendMessage(self,pos1):
-        self.sensor=self.ABB_EGM.CreateNewMessage()#创建新的消息句柄
+    def set_robot_pos_euler(self, pos1):
+        sensor = self.ABB_EGM.CreateNewMessage()   #创建新的消息句柄
         planned = EgmPlanned.Builder()
-        pos=EgmPose.Builder()
+        pos = EgmPose.Builder()
         pc = EgmCartesian.Builder()
         po = EgmEuler.Builder()
         pc.SetX(pos1[0])
         pc.SetY(pos1[1])
         pc.SetZ(pos1[2])
-        po.SetX(pos1[3])
+        po.SetX(pos1[5])
         po.SetY(pos1[4])
-        po.SetZ(pos1[5])
+        po.SetZ(pos1[3])
         pos.SetPos(pc)
         pos.SetEuler(po)
         planned.SetCartesian(pos)
-        self.sensor.SetPlanned(planned)#写入计划位置
-        return self.ABB_EGM.SendMessage(self.sensor)
-    def GetrobotJoint(self):
-        self.robot=self.ABB_EGM.ReceiveMessage()#接受ABB机器人发送的信息，并反序列化。
-        status=self.robot.RapidExecState.State
-        if status==EgmRapidCtrlExecState.Types.RapidCtrlExecStateType.RAPID_RUNNING:
-            X = self.robot.FeedBack.Cartesian.Pos.X;
-            Y = self.robot.FeedBack.Cartesian.Pos.Y;
-            Z = self.robot.FeedBack.Cartesian.Pos.Z;
-            ROLL = self.robot.FeedBack.Cartesian.Euler.X;
-            PITCH = self.robot.FeedBack.Cartesian.Euler.Y
-            YAW = self.robot.FeedBack.Cartesian.Euler.Z
-            joint=[X,Y,Z,ROLL,PITCH,YAW]
-            return True,joint
-        else:
-            return False,None
+        sensor.SetPlanned(planned)#写入计划位置
+        return self.ABB_EGM.SendMessage(sensor)
+
 
 if __name__=='__main__':
-    myabb=EGM(6511)
-    num1=0
-    while True:
-       flag,pos=myabb.ReceiveMessage()
-       num1+=1
-       print(num1)
-       if flag:
-           pos[0]+=5
-           #joint=myabb.robot.FeedBack.Joints.JointsList
-           #joint=list(joint)
-           #print(joint)
-           num=myabb.SendMessage(pos)
+    myabb=EGM("192.168.1.2",6510)
+    pos=myabb.get_robot_pos_euler()
+    while pos[4]<60:
+       pos=myabb.get_robot_pos_euler()
+       print(pos)
+       if pos is not None :
+           pos[4]+=1
+           num=myabb.set_robot_pos_euler(pos)
            for i in range (6):
             print(round(pos[i],2),end="  ")
-       #time.sleep(0.4)
-
+    myabb=None
+    myabb=EGM("192.168.1.2",6510)
+    while True:
+       pos=myabb.get_robot_pos_euler()
+       print(pos)
+       if pos is not None:
+           pos[1]+=1
+           num=myabb.set_robot_pos_euler(pos)
+           for i in range (6):
+            print(round(pos[i],2),end="  ")
+            print("ok")

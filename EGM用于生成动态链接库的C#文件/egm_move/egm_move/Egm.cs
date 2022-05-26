@@ -13,13 +13,14 @@ using System.Net.Sockets;
 namespace abb.egm {
    public class ABBEGM
     {
-        public ABBEGM(int ipPortNumber)
+        public ABBEGM(string  IP ,int ipPortNumber)
         {
             _ipPortNumber = ipPortNumber;
             _udpServer = new UdpClient(_ipPortNumber);
-            remoteEP = new IPEndPoint(IPAddress.Any, _ipPortNumber);
+            remoteEP = new IPEndPoint(IPAddress.Parse(IP), _ipPortNumber);
+
         }
-        private UdpClient _udpServer = null;
+        public UdpClient _udpServer = null;
         private static int _ipPortNumber;
         private uint _seqNumber = 0;
         private IPEndPoint remoteEP;
